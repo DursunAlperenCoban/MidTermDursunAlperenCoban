@@ -6,7 +6,7 @@ class Automobile{
     public $modelYear;
     public $color;
 
-    function construct($licencePlate,$brand,$model,$modelYear,$color)
+    function __construct($licencePlate,$brand,$model,$modelYear,$color)
     {
         $this->licencePlate=$licencePlate;
         $this->brand=$brand;
@@ -14,7 +14,7 @@ class Automobile{
         $this->modelYear=$modelYear;
         $this->color=$color;
     }
-    function toString()
+    function __toString()
     {
       return  "Licence Plate: ".$this->licencePlate ."<br>Brand: ". $this->brand ."<br>Model: ". $this->model ."<br>Year: ". $this->modelYear ."<br>Color: ". $this->color;
     }
